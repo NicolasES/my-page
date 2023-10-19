@@ -34,19 +34,24 @@ export const MyImage: React.FC<{ src: string }> = ({ src }) => {
       borderBottom: 'none',
       borderWidth: '2px',
       borderRadius: '10px 0 0 0',
-      boxShadow: '-10px -10px 10px rgba(26, 158, 26, 0.5)'
+      boxShadow: '-10px -10px 10px rgba(26, 158, 26, 0.5)',
+      transition: '0.8s',
+      background: 'transparent'
+    },
+    ":hover": {
+      ":before": {
+        boxShadow: '-10px -10px 20px 5px rgba(26, 158, 26, 0.8)'
+      }
     }
   }
 
   return (
-    <>
-      <Box component="div" sx={cssDivImg} >
-        <img id="me-img" src={src} alt="me"
-          style={cssImg}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        />
-      </Box>
-    </>
+    <Box component="div" sx={cssDivImg} >
+      <img id="me-img" src={src} alt="me"
+        style={cssImg}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      />
+    </Box>
   )
 }
