@@ -24,14 +24,19 @@ export const AboutMe: React.FC = () => {
         <Grid xs={6}>
           <TitleDivider text='Sobre mim'></TitleDivider>
 
-          <Typography variant="h1" textAlign='left' my={3}>
+          <Typography variant="h1" textAlign='left' mt={3}>
             Nicolas Escouto Sonnenfeld
           </Typography>
 
-          <Typography variant="body1" sx={styles.p}>
+          <Typography variant="subtitle1" textAlign='left'>
+            Desenvolvedor de Software
+          </Typography>
+
+          <Typography variant="body1" sx={styles.p} mt={3}>
             Tenho grande experiência na criação de APIs rest. Atualmente utilizo
             NodeJS / Typescript como principal tecnologia de desenvolvimento.
-            Gosto de participar da arquitetura do sistema, já trabalhei Clean Architecture na criação de microsserviços Testes com Jest e TDD
+            Gosto de participar da arquitetura do sistema, já trabalhei com Clean Architecture na criação de microsserviços, 
+            testes com Jest e TDD,
             Mensageria Kafka e SQS.
           </Typography>
 
