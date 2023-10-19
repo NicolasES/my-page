@@ -18,6 +18,18 @@ function App() {
     palette: {
       mode: 'dark',
     },
+    typography: {
+      h1: {
+        fontSize: '2.3rem',
+        textAlign: 'center',
+        fontWeight: '500'
+      },
+      h2: {
+        fontSize: '2rem',
+        fontWeight: '400'
+      },
+      fontSize: 16
+    },
   });
 
 

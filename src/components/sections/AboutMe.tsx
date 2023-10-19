@@ -1,10 +1,20 @@
-import { Container } from "@mui/material"
+import { Box, Container, Link, Typography } from "@mui/material"
 import Grid from '@mui/material/Unstable_Grid2' // Grid version 2
-import { MyImage } from "../shared"
+import { MyImage, TitleDivider } from "../shared"
 import meImg from '../../assets/me.jpeg'
+import LinkedInIcon from '@mui/icons-material/LinkedIn'
+import GitHubIcon from '@mui/icons-material/GitHub'
 
 
 export const AboutMe: React.FC = () => {
+  const styles = {
+    p: {
+      textAlign: 'justify',
+      lineHeight: '42px',
+      fontSize: '1.3rem'
+    }
+  }
+
   return (
     <Container maxWidth="lg">
       <Grid container spacing={5} justifyContent="center">
@@ -12,7 +22,27 @@ export const AboutMe: React.FC = () => {
           <MyImage src={meImg} />
         </Grid>
         <Grid xs={6}>
-          xs 5
+          <TitleDivider text='Sobre mim'></TitleDivider>
+
+          <Typography variant="h1" textAlign='left' my={3}>
+            Nicolas Escouto Sonnenfeld
+          </Typography>
+
+          <Typography variant="body1" sx={styles.p}>
+            Tenho grande experiência na criação de APIs rest. Atualmente utilizo
+            NodeJS / Typescript como principal tecnologia de desenvolvimento.
+            Gosto de participar da arquitetura do sistema, já trabalhei Clean Architecture na criação de microsserviços Testes com Jest e TDD
+            Mensageria Kafka e SQS.
+          </Typography>
+
+          <Box mt={3}>
+            <Link href="#" color="inherit">
+              <LinkedInIcon fontSize="large" sx={{ mx: 3 }}></LinkedInIcon>
+            </Link>
+            <Link href="#" color="inherit">
+              <GitHubIcon fontSize="large" sx={{ mx: 3 }}></GitHubIcon>
+            </Link>
+          </Box>
         </Grid>
       </Grid>
     </Container>
