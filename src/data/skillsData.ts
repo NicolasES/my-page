@@ -1,4 +1,6 @@
+import NodeJsIcon from "../components/icons/NodeJsIcon"
 import ReactIcon from "../components/icons/ReactIcon"
+import TypescriptIcon from "../components/icons/TypescriptIcon"
 import VueIcon from "../components/icons/VueIcon"
 
 export type Skill = {
@@ -20,7 +22,12 @@ export const skillsData: Array<Skill> = [
   },
   {
     skill: 'Nodejs',
-    icon: undefined,
+    icon: NodeJsIcon,
+    selected: false
+  },
+  {
+    skill: 'Typescript',
+    icon: TypescriptIcon,
     selected: false
   },
 ]
