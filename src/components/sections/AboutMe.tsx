@@ -17,11 +17,11 @@ export const AboutMe: React.FC = () => {
 
   return (
     <Container maxWidth="lg">
-      <Grid container spacing={5} justifyContent="center">
+      <Grid container spacing={5}>
         <Grid xs={4}>
           <MyImage src={meImg} />
         </Grid>
-        <Grid xs={6}>
+        <Grid xs={8}>
           <TitleDivider text='Sobre mim'></TitleDivider>
 
           <Typography variant="h1" textAlign='left' mt={3}>
