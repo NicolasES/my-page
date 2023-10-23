@@ -1,6 +1,6 @@
 import { SvgIcon } from "@mui/material"
 
-export const VueIcons: React.FC = () => {
+const VueIcon: React.FC = () => {
   return (
     <SvgIcon>
       <svg viewBox="0 0 128 128" width="24" height="24" data-v-c0161dce="">
@@ -10,3 +10,5 @@ export const VueIcons: React.FC = () => {
     </SvgIcon>
   )
 }
+
+export default VueIcon

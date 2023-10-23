@@ -1,6 +1,6 @@
 import './App.css'
 import { Box, CssBaseline, ThemeProvider, createTheme } from '@mui/material'
-import { AboutMe } from './components'
+import { AboutMe, Skills } from './components'
 
 function App() {
 
@@ -17,6 +17,9 @@ function App() {
   const darkTheme = createTheme({
     palette: {
       mode: 'dark',
+      primary: {
+        main: '#4444ddee'
+      }
     },
     typography: {
       h1: {
@@ -46,6 +49,10 @@ function App() {
       <main>
         <Box component="section" style={styles.sectionBox}>
           <AboutMe />
+        </Box>
+
+        <Box component="section" style={styles.sectionBox}>
+          <Skills />
         </Box>
       </main>
     </ThemeProvider>
