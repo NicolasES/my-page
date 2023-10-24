@@ -57,9 +57,9 @@ export const Skills: React.FC = () => {
         <Grid container xs={6} alignItems={'baseline'} direction={'column'} spacing={1}>
 
           {
-            skills.filter(skill => skill.selected == true).map((skill) => (
+            skills.filter(skill => skill.selected == true).map((skill, index) => (
 
-              <Grid container xs={12} alignItems={'center'}>
+              <Grid container xs={12} alignItems={'center'} key={index}>
                 <Grid xs={4}>
                   <div style={{ display: 'flex', alignItems: 'center' }}>
                     {
