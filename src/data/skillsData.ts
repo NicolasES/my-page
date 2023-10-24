@@ -7,34 +7,40 @@ import VueIcon from "../components/icons/VueIcon"
 
 export type Skill = {
   skill: string,
-  icon: React.FC<IconProperties> | undefined,
+  icon: React.FC<IconProperties>,
   selected: boolean
+  rating: number
 }
 
 export const skillsData: Array<Skill> = [
   {
     skill: 'Vue',
     icon: VueIcon,
-    selected: false
+    selected: false,
+    rating: 3
   },
   {
     skill: 'React',
     icon: ReactIcon,
-    selected: false
+    selected: false,
+    rating: 1
   },
   {
     skill: 'Nodejs',
     icon: NodeJsIcon,
-    selected: false
+    selected: true,
+    rating: 5
   },
   {
     skill: 'Typescript',
     icon: TypescriptIcon,
-    selected: false
+    selected: true,
+    rating: 5
   },
   {
     skill: 'Clean Architecture',
     icon: CleanArchitectureIcon,
-    selected: false
+    selected: false,
+    rating: 4
   },
 ]

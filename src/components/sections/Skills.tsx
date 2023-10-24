@@ -1,11 +1,18 @@
-import { Box, Chip, Container, TextField } from '@mui/material'
+import { Box, Chip, Container, LinearProgress, TextField } from '@mui/material'
 import Grid from '@mui/material/Unstable_Grid2'
 import { skillsData, Skill } from '../../data/skillsData'
 import { useState } from 'react'
 import { TitleDivider } from '../shared'
 
 export const Skills: React.FC = () => {
-  const [skills, setSkills] = useState(skillsData)
+  const [skills, setSkills] = useState(
+    skillsData.sort((a, b) => {
+      if (a.rating < b.rating) return 1
+      if (a.rating > b.rating) return -1
+      if (a.skill > b.skill) return 1
+      return -1
+    })
+  )
 
   const filter = (e: React.ChangeEvent<HTMLInputElement>) => {
     const newSkillsList = skillsData.filter((skill) => {
@@ -26,13 +33,13 @@ export const Skills: React.FC = () => {
     <Container maxWidth='lg'>
       <Grid container spacing={5} >
         <Grid xs={12}>
-          <TitleDivider text='Skills - Conhecimentos'></TitleDivider>
+          <TitleDivider text='Competências'></TitleDivider>
         </Grid>
 
         <Grid xs={6}>
           <TextField fullWidth label='Pesquisar' variant="outlined" onChange={filter} />
 
-          <Box flexWrap='wrap' display='flex' justifyContent='space-between' mt={3}>
+          <Box justifyContent='space-between' mt={3}>
             {skills.map((skill, index) => (
               <Chip
                 key={index}
@@ -44,6 +51,28 @@ export const Skills: React.FC = () => {
               />
             ))}
           </Box>
+        </Grid>
+
+        <Grid container xs={6} alignItems={'baseline'} direction={'column'}>
+
+          {
+            skills.filter(skill => skill.selected == true).map((skill) => (
+
+              <Grid container xs={12} alignItems={'center'}>
+                <Grid xs={4}>
+                  <div style={{ display: 'flex', alignItems: 'center' }}>
+                    <skill.icon size={45} sx={{ mr: 2 }} />
+                    {skill.skill}
+                  </div>
+                </Grid>
+                <Grid xs={8}>
+                    <LinearProgress variant="determinate" value={skill.rating * 100 / 5} color='warning' />
+                </Grid>
+              </Grid>
+
+            ))
+          }
+
         </Grid>
       </Grid>
     </Container>
