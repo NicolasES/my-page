@@ -3,6 +3,7 @@ import Grid from '@mui/material/Unstable_Grid2'
 import { skillsData, Skill } from '../../data/skillsData'
 import { useState } from 'react'
 import { TitleDivider } from '../shared'
+import CodeIcon from '@mui/icons-material/Code';
 
 export const Skills: React.FC = () => {
   const [skills, setSkills] = useState(
@@ -61,7 +62,9 @@ export const Skills: React.FC = () => {
               <Grid container xs={12} alignItems={'center'}>
                 <Grid xs={4}>
                   <div style={{ display: 'flex', alignItems: 'center' }}>
-                    <skill.icon size={45} sx={{ mr: 2 }} />
+                    {
+                      skill.icon ? (<skill.icon size={45} sx={{ mr: 2 }} />) : (<CodeIcon sx={{mr: 2, fontSize: 45}} />)
+                    }
                     {skill.skill}
                   </div>
                 </Grid>
