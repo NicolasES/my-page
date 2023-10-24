@@ -1,3 +1,4 @@
+import CleanArchitectureIcon from "../components/icons/CleanArchitectureIcon"
 import NodeJsIcon from "../components/icons/NodeJsIcon"
 import ReactIcon from "../components/icons/ReactIcon"
 import TypescriptIcon from "../components/icons/TypescriptIcon"
@@ -28,6 +29,11 @@ export const skillsData: Array<Skill> = [
   {
     skill: 'Typescript',
     icon: TypescriptIcon,
+    selected: false
+  },
+  {
+    skill: 'Clean Architecture',
+    icon: CleanArchitectureIcon,
     selected: false
   },
 ]
