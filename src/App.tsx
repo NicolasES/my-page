@@ -1,6 +1,7 @@
 import './App.css'
 import { Box, CssBaseline, ThemeProvider, createTheme } from '@mui/material'
 import { AboutMe, Skills } from './components'
+import { Experience } from './components/sections/Experience';
 
 function App() {
 
@@ -32,7 +33,7 @@ function App() {
         fontSize: '2rem',
         fontWeight: '400'
       },
-      body1:{
+      body1: {
         color: '#bdbdbd'
       },
       subtitle1: {
@@ -53,6 +54,10 @@ function App() {
 
         <Box component="section" style={styles.sectionBox}>
           <Skills />
+        </Box>
+
+        <Box component="section" style={styles.sectionBox}>
+          <Experience />
         </Box>
       </main>
     </ThemeProvider>
