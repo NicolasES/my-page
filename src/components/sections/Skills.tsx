@@ -34,15 +34,15 @@ export const Skills: React.FC = () => {
 
           <Box flexWrap='wrap' display='flex' justifyContent='space-between' mt={3}>
             {skills.map((skill, index) => (
-            <Chip
-              key={index}
-              icon={skill.icon ? <skill.icon /> : undefined}
-              label={skill.skill}
-              sx={{ m: 1, borderRadius: 24, p: 3, fontSize: '1rem' }}
-              color={skill.selected ? 'primary' : 'default'}
-              onClick={() => handleClickChip(skill)}
-            />
-          ))}
+              <Chip
+                key={index}
+                icon={skill.icon ? <skill.icon size={30} /> : undefined}
+                label={skill.skill}
+                sx={{ m: 1, borderRadius: 24, p: 3, fontSize: '1rem' }}
+                color={skill.selected ? 'primary' : 'default'}
+                onClick={() => handleClickChip(skill)}
+              />
+            ))}
           </Box>
         </Grid>
       </Grid>

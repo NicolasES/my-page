@@ -1,4 +1,5 @@
 import CleanArchitectureIcon from "../components/icons/CleanArchitectureIcon"
+import { IconProperties } from "../components/icons/IconProperties"
 import NodeJsIcon from "../components/icons/NodeJsIcon"
 import ReactIcon from "../components/icons/ReactIcon"
 import TypescriptIcon from "../components/icons/TypescriptIcon"
@@ -6,7 +7,7 @@ import VueIcon from "../components/icons/VueIcon"
 
 export type Skill = {
   skill: string,
-  icon: React.FC | undefined,
+  icon: React.FC<IconProperties> | undefined,
   selected: boolean
 }
 
