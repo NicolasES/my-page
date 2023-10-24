@@ -41,10 +41,10 @@ export const AboutMe: React.FC = () => {
           </Typography>
 
           <Box mt={3}>
-            <Link href="#" color="inherit">
+            <Link href="https://www.linkedin.com/in/nicolas-escouto-sonnenfeld-42b17298/" target="_blank" color="inherit">
               <LinkedInIcon fontSize="large" sx={{ mx: 3 }}></LinkedInIcon>
             </Link>
-            <Link href="#" color="inherit">
+            <Link href="https://github.com/NicolasES" target="_blank" color="inherit">
               <GitHubIcon fontSize="large" sx={{ mx: 3 }}></GitHubIcon>
             </Link>
           </Box>

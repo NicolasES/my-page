@@ -10,7 +10,7 @@ function App() {
       // height: '100vh',
       alignItems: 'center',
       display: 'flex',
-      padding: '56px 0'
+      padding: '74px 0'
     },
   }
 

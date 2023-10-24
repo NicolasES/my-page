@@ -22,7 +22,7 @@ export const experiencesData = [
       Principais atividades eram a criação de APIs e comunicação entre microserviços.
       <br /><br />
 
-      <strong>Principais tecnologias:</strong> Nodejs, Typescript, clean architecture, Vuejs, MongoDB, MYSQL.
+      <strong>Principais tecnologias:</strong> Nodejs, Typescript, clean architecture, Redis, Kafka, Vuejs, MongoDB, MYSQL.
     `
   },
 
