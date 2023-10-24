@@ -40,7 +40,7 @@ export const skillsData: Array<Skill> = [
   {
     skill: 'Clean Architecture',
     icon: CleanArchitectureIcon,
-    selected: false,
+    selected: true,
     rating: 4
   },
   {
@@ -66,5 +66,29 @@ export const skillsData: Array<Skill> = [
     icon: undefined,
     selected: false,
     rating: 3
+  },
+  {
+    skill: 'Redis',
+    icon: undefined,
+    selected: false,
+    rating: 2
+  },
+  {
+    skill: 'Kafka',
+    icon: undefined,
+    selected: false,
+    rating: 2
+  },
+  {
+    skill: 'MongoDB',
+    icon: undefined,
+    selected: false,
+    rating: 4
+  },
+  {
+    skill: 'MYSQL',
+    icon: undefined,
+    selected: false,
+    rating: 4
   },
 ]
