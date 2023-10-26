@@ -34,17 +34,17 @@ export const AboutMe: React.FC = () => {
           </Typography>
 
           <Typography variant="body1" sx={styles.p} mt={3}>
-            Trabalho com desenvolvimento de sistemas desde <strong>2014</strong> 
-            quando tive minha primeira oportunidade de estágio enquanto cursava um curso técnico  de informática. 
+            Trabalho com desenvolvimento de sistemas desde <strong>2014</strong> quando 
+            tive minha primeira oportunidade de estágio enquanto cursava um curso técnico  de informática. 
             Em 2015, enquanto já trabalhava na área, iniciei a faculdade e em 2018 
             me formei em <strong>Análise e Desenvolvimento de Sistemas</strong>. 
             Tenho grande experiência de desenvolvimento web focado no backend de sistemas 
             e trabalhei principalmente desenvolvendo sistemas <strong>SaaS</strong> de empresas. <br />
             Desenvolvi diversas <strong>APIs Rest</strong>, iniciei trabalhando com 
-            a linguagem de programação <strong>PHP </strong> 
-            mas atualmente trabalho mais com <strong>NodeJS / Typescript</strong> como principal tecnologia 
+            a linguagem de programação <strong>PHP</strong> mas atualmente trabalho 
+            mais com <strong>NodeJS / Typescript</strong> como principal tecnologia 
             de desenvolvimento. Gosto de participar de definições do produto e já trabalhei 
-            com sistemas orientados a <strong>DDD (Domain Driven Desgin) e Clean Architecture</strong> na criação de microsserviços; 
+            com sistemas orientados a <strong>DDD (Domain Driven Design) e Clean Architecture</strong> na criação de microsserviços; 
             Testes com <strong>Jest e TDD</strong>; Mensageria <strong>Kafka e SQS</strong>.
           </Typography>
 
