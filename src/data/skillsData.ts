@@ -3,6 +3,7 @@ import { IconProperties } from "../components/icons/IconProperties"
 import JestIcon from "../components/icons/JestIcon"
 import MongoDBIcon from "../components/icons/MongoDBIcon"
 import MysqlIcon from "../components/icons/MysqlIcon"
+import NestjsIcon from "../components/icons/NestjsIcon"
 import NodeJsIcon from "../components/icons/NodeJsIcon"
 import PHPIcon from "../components/icons/PHPIcon"
 import ReactIcon from "../components/icons/ReactIcon"
@@ -57,7 +58,7 @@ export const skillsData: Array<Skill> = [
     skill: 'Laravel',
     icon: undefined,
     selected: false,
-    rating: 4
+    rating: 3
   },
   {
     skill: 'Backend',
@@ -106,5 +107,11 @@ export const skillsData: Array<Skill> = [
     icon: CleanArchitectureIcon,
     selected: false,
     rating: 2
+  },
+  {
+    skill: 'NestJS',
+    icon: NestjsIcon,
+    selected: false,
+    rating: 3
   },
 ]
