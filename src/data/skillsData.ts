@@ -1,6 +1,10 @@
 import CleanArchitectureIcon from "../components/icons/CleanArchitectureIcon"
 import { IconProperties } from "../components/icons/IconProperties"
+import JestIcon from "../components/icons/JestIcon"
+import MongoDBIcon from "../components/icons/MongoDBIcon"
+import MysqlIcon from "../components/icons/MysqlIcon"
 import NodeJsIcon from "../components/icons/NodeJsIcon"
+import PHPIcon from "../components/icons/PHPIcon"
 import ReactIcon from "../components/icons/ReactIcon"
 import TypescriptIcon from "../components/icons/TypescriptIcon"
 import VueIcon from "../components/icons/VueIcon"
@@ -45,7 +49,7 @@ export const skillsData: Array<Skill> = [
   },
   {
     skill: 'PHP',
-    icon: undefined,
+    icon: PHPIcon,
     selected: false,
     rating: 4
   },
@@ -81,14 +85,26 @@ export const skillsData: Array<Skill> = [
   },
   {
     skill: 'MongoDB',
-    icon: undefined,
+    icon: MongoDBIcon,
     selected: false,
     rating: 4
   },
   {
     skill: 'MYSQL',
-    icon: undefined,
+    icon: MysqlIcon,
     selected: false,
     rating: 4
+  },
+  {
+    skill: 'Jest',
+    icon: JestIcon,
+    selected: false,
+    rating: 4
+  },
+  {
+    skill: 'DDD',
+    icon: CleanArchitectureIcon,
+    selected: false,
+    rating: 2
   },
 ]
