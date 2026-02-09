@@ -16,10 +16,9 @@ export const experiencesData = [
     'role': 'Backend Developer',
     'period': '2022 - 2023',
     'description': `
-      Desenvolvimento de APIs de alta performance e baixa latência para o fornecimento de dados em tempo real. 
-      Foco na otimização de queries e estruturação de serviços para suportar grandes volumes de requisições provenientes dos clientes front-end.
+      Desenvolvimento de APIs de alta performance e baixa latência para fornecimento de dados em tempo real. Otimização de queries e estruturação de serviços para suportar grandes volumes de requisições.
       <br /><br />
-      <strong>Tech Stack:</strong> Node.js, PHP, Laravel Framework, MySQL.
+      <strong>Tech Stack:</strong> PHP, Laravel Framework, MySQL.
     `
   },
   {
