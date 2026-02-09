@@ -34,18 +34,15 @@ export const AboutMe: React.FC = () => {
           </Typography>
 
           <Typography variant="body1" sx={styles.p} mt={3}>
-            Trabalho com desenvolvimento de sistemas desde <strong>2014</strong> quando 
-            tive minha primeira oportunidade de estágio enquanto cursava um curso técnico  de informática. 
-            Em 2015, enquanto já trabalhava na área, iniciei a faculdade e em 2018 
-            me formei em <strong>Análise e Desenvolvimento de Sistemas</strong>. 
-            Tenho grande experiência de desenvolvimento web focado no backend de sistemas 
-            e trabalhei principalmente desenvolvendo sistemas <strong>SaaS</strong> de empresas. <br />
-            Desenvolvi diversas <strong>APIs Rest</strong>, iniciei trabalhando com 
-            a linguagem de programação <strong>PHP</strong> mas atualmente trabalho 
-            mais com <strong>NodeJS / Typescript</strong> como principal tecnologia 
-            de desenvolvimento. Gosto de participar de definições do produto e já trabalhei 
-            com sistemas orientados a <strong>DDD (Domain Driven Design) e Clean Architecture</strong> na criação de microsserviços; 
-            Testes com <strong>Jest e TDD</strong>; Mensageria <strong>Kafka e SQS</strong>.
+            Desenvolvedor Backend com <strong>10 anos de experiência</strong> focado na construção de sistemas <strong>SaaS escaláveis</strong>. 
+            Especialista em <strong>Node.js, TypeScript e PHP (Laravel)</strong>, domino o design de arquiteturas resilientes utilizando 
+            <strong> Clean Architecture, DDD e Microsserviços</strong>.
+            <br /><br />
+            Com passagens por grandes players como <strong>Starian e Warren Brasil</strong>, possuo sólida vivência em ambientes de alta performance com mensageria 
+            <strong> (Kafka e SQS)</strong> e testes automatizados. 
+            <br /><br />
+            Acredito que tecnologia deve gerar valor real; por isso, atuo <strong>próximo ao produto e ao negócio</strong>, 
+            participando ativamente de <strong>definições estratégicas</strong> que transformam requisitos complexos em APIs eficientes, seguras e de alta disponibilidade.
           </Typography>
 
           <Box mt={3} alignItems='center' display='flex'>

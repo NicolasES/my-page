@@ -1,57 +1,59 @@
 export const experiencesData = [
   {
+    'company': 'Starian',
+    'role': 'Backend Developer',
+    'period': '2023 - 2026',
+    'description': `
+      Responsável pelo desenvolvimento de funcionalidades críticas para uma plataforma SaaS, utilizando PHP (Laravel). 
+      Atuação full-stack estratégica com Angular e TypeScript para garantir a consistência entre o core business e a interface do usuário.
+      Foco em entregas contínuas sob metodologia Kanban em um time de alta performance, garantindo a qualidade através de testes automatizados e documentação técnica.
+      <br /><br />
+      <strong>Tech Stack:</strong> PHP 8+, Laravel, MySQL, TypeScript, Angular, Kanban.
+    `
+  },
+  {
     'company': 'Nelogica',
-    'role': 'Backend developer',
+    'role': 'Backend Developer',
     'period': '2022 - 2023',
     'description': `
-      Atuei como desenvolvedor backend para construções de APIs fornecendo dados internos para os clients frontend.
+      Desenvolvimento de APIs de alta performance e baixa latência para o fornecimento de dados em tempo real. 
+      Foco na otimização de queries e estruturação de serviços para suportar grandes volumes de requisições provenientes dos clientes front-end.
       <br /><br />
-
-      <strong>Principais tecnologias:</strong> Nodejs, PHP, Laravel Framework, MYSQL.
+      <strong>Tech Stack:</strong> Node.js, PHP, Laravel Framework, MySQL.
     `
   },
-
   {
     'company': 'Warren Brasil',
-    'role': 'Backend developer',
+    'role': 'Backend Developer',
     'period': '2020 - 2022',
     'description': `
-      Atuei como desenvolvedor backend no time de cadastro de clientes de um sistemas SaaS financeiro 
-      de uma grande corretora de investimentos. Participei de diversas reuniões de definição do sistemas junto ao product manager
-      e o tech lead.
-      As principais atividades eram a criação de APIs e comunicação entre microsserviços.
+      Atuação no core de Cadastro de Clientes (Onboarding) de um ecossistema financeiro SaaS de grande escala. 
+      Desenvolvimento de arquitetura baseada em microsserviços, utilizando mensageria (Kafka) e cache distribuído (Redis) para garantir resiliência e escalabilidade.
+      Colaboração direta com Product Managers e Tech Leads na definição de requisitos técnicos e regras de negócio complexas sob Clean Architecture.
       <br /><br />
-
-      <strong>Principais tecnologias:</strong> Nodejs, Typescript, clean architecture, Redis, Kafka, Vuejs, MongoDB, MYSQL.
+      <strong>Tech Stack:</strong> Node.js, TypeScript, Clean Architecture, Redis, Kafka, MongoDB, MySQL, Vue.js.
     `
   },
-
   {
     'company': 'VG8',
-    'role': 'Full stack developer',
+    'role': 'Full Stack Developer',
     'period': '2019 - 2020',
     'description': `
-      Atuei como desenvolvedor fullstack na construção de um sistemas SaaS relacionado a meios de pagamentos
-      automáticos para estacionamentos de shoppings e descontos aos clientes.
-      As principais atividades eram a criação de APIs e comunicação entre microsserviços.
+      Desenvolvimento Full Stack de uma plataforma SaaS para meios de pagamento automatizados e fidelização em shoppings. 
+      Implementação de fluxos financeiros complexos via microsserviços e integração de APIs de pagamento, utilizando NestJS e TypeScript para garantir robustez e tipagem segura.
       <br /><br />
-
-      <strong>Principais tecnologias:</strong> Nodejs, Typescript, Framework Nestjs, Vuejs, MYSQL.
+      <strong>Tech Stack:</strong> Node.js, TypeScript, NestJS, Vue.js, MySQL.
     `
   },
-
   {
     'company': 'Checklist Fácil',
-    'role': 'Desenvolvedor Web',
+    'role': 'Software Developer',
     'period': '2014 - 2019',
     'description': `
-      Atuei como desenvolvimento de sistemas SaaS, sites e APIs utilizando PHP,
-      framework Laravel e trabalhando com HTML, CSS, JQuery, JavaScript e banco de dados MYSQL.
-      Participava de reuniões com clientes e definições estratégicas.
-      
+      Desenvolvimento de sistemas SaaS e APIs escaláveis. Ao longo de 5 anos, contribuí para a evolução do produto principal, saindo de soluções legadas para arquiteturas modernas com Laravel. 
+      Participação estratégica no levantamento de requisitos com clientes e definições técnicas que impactaram o crescimento da plataforma.
       <br /><br />
-
-      <strong>Principais tecnologias:</strong> PHP, framework Laravel, HTML, CSS, JQuery, JavaScript e banco de dados MYSQL
+      <strong>Tech Stack:</strong> PHP, Laravel, JavaScript, jQuery, MySQL, HTML5/CSS3.
     `
   }
 ]
