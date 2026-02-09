@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Nicolas Escouto Sonnenfeld</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #2980b9;
+            --text-color: #333;
+            --light-text: #666;
+            --bg-color: #fff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+
+        header {
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            margin: 0 0 10px 0;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 0.9em;
+            color: var(--light-text);
+        }
+
+        .contact-info a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.4em;
+            border-left: 5px solid var(--accent-color);
+            padding-left: 10px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .summary p {
+            margin: 0;
+            text-align: justify;
+        }
+
+        .experience-item {
+            margin-bottom: 25px;
+            break-inside: avoid
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+
+        .company {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: var(--primary-color);
+        }
+
+        .role {
+            font-style: italic;
+            color: var(--text-color);
+        }
+
+        .period {
+            font-size: 0.9em;
+            color: var(--light-text);
+            min-width: 120px;
+            text-align: right;
+        }
+
+        .job-description {
+            font-size: 0.95em;
+            margin-top: 5px;
+        }
+
+        .tech-stack {
+            font-size: 0.85em;
+            color: var(--accent-color);
+            font-weight: 600;
+            margin-top: 5px;
+            display: block;
+        }
+
+        .education-item {
+            margin-bottom: 10px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+        .skill-category {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 2px;
+            color: var(--primary-color);
+        }
+
+        @media print {
+            body { padding: 0; max-width: 100%; }
+            a { text-decoration: none; color: #000; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Nicolas Escouto Sonnenfeld</h1>
+        <div class="contact-info">
+            <span>📍 Porto Alegre, RS</span>
+            <span>📱 (51) 99150-1621</span>
+            <span>✉️ nicolas.escouto@gmail.com</span>
+            <span>🔗 <a href="https://www.linkedin.com/in/nicolas-escouto-sonnenfeld-42b17298" target="_blank">LinkedIn</a></span>
+            <span>💻 <a href="https://github.com/NicolasES" target="_blank">GitHub</a></span>
+        </div>
+    </header>
+
+    <section class="summary">
+        <h2>Resumo Profissional</h2>
+        <p>
+            Desenvolvedor Backend com <strong>10 anos de experiência</strong> focado na construção de sistemas <strong>SaaS escaláveis</strong>. Especialista em <strong>Node.js, TypeScript e PHP (Laravel)</strong>, domino o design de arquiteturas resilientes utilizando <strong>Clean Architecture, DDD e Microsserviços</strong>.
+            <br><br>
+            Com passagens por grandes players como <strong>Starian, Warren Brasil e Nelogica</strong>, possuo sólida vivência em ambientes de alta performance com mensageria <strong>(Kafka e SQS)</strong> e testes automatizados.
+            <br><br>
+            Acredito que tecnologia deve gerar valor real; por isso, atuo <strong>próximo ao produto e ao negócio</strong>, participando ativamente de <strong>definições estratégicas</strong> que transformam requisitos complexos em APIs eficientes, seguras e de alta disponibilidade.
+        </p>
+    </section>
+
+    <section>
+        <h2>Experiência Profissional</h2>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <div>
+                    <span class="company">Starian</span> | <span class="role">Backend Developer</span>
+                </div>
+                <span class="period">2023 - 2026</span>
+            </div>
+            <div class="job-description">
+                Responsável pelo desenvolvimento de funcionalidades críticas para uma plataforma SaaS escalável. Atuação full-stack estratégica garantindo consistência entre core business e interface. Foco em entregas contínuas (CI/CD) e metodologia Kanban em time de alta performance.
+                <span class="tech-stack">Tech Stack: PHP 8+, Laravel, MySQL, TypeScript, Angular.</span>
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <div>
+                    <span class="company">Nelogica</span> | <span class="role">Backend Developer</span>
+                </div>
+                <span class="period">2022 - 2023</span>
+            </div>
+            <div class="job-description">
+                Desenvolvimento de APIs de alta performance e baixa latência para fornecimento de dados em tempo real. Otimização de queries e estruturação de serviços para suportar grandes volumes de requisições.
+                <span class="tech-stack">Tech Stack: Node.js, PHP, Laravel, MySQL.</span>
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <div>
+                    <span class="company">Warren Brasil</span> | <span class="role">Backend Developer</span>
+                </div>
+                <span class="period">2020 - 2022</span>
+            </div>
+            <div class="job-description">
+                Atuação no core de Cadastro de Clientes (Onboarding) de um ecossistema financeiro. Desenvolvimento de arquitetura baseada em microsserviços, utilizando mensageria (Kafka) e cache (Redis). Colaboração direta com Product Managers em definições de regras de negócio sob Clean Architecture.
+                <span class="tech-stack">Tech Stack: Node.js, TypeScript, Redis, Kafka, MongoDB, MySQL, Vue.js.</span>
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <div>
+                    <span class="company">VG8</span> | <span class="role">Full Stack Developer</span>
+                </div>
+                <span class="period">2019 - 2020</span>
+            </div>
+            <div class="job-description">
+                Desenvolvimento Full Stack de plataforma SaaS para meios de pagamento e fidelização. Implementação de fluxos financeiros complexos via microsserviços e integração de APIs de pagamento.
+                <span class="tech-stack">Tech Stack: Node.js, TypeScript, NestJS, Vue.js, MySQL.</span>
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <div>
+                    <span class="company">Checklist Fácil (RZ2)</span> | <span class="role">Desenvolvedor Web</span>
+                </div>
+                <span class="period">2014 - 2019</span>
+            </div>
+            <div class="job-description">
+                Evolução de produto SaaS saindo de legado para arquiteturas modernas. Participação estratégica no levantamento de requisitos com clientes.
+                <span class="tech-stack">Tech Stack: PHP, Laravel, JavaScript, jQuery, MySQL.</span>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Competências Técnicas</h2>
+        <div class="skills-grid">
+            <div>
+                <span class="skill-category">Backend & Linguagens:</span>
+                Node.js, TypeScript, PHP 8+, Laravel, NestJS.
+            </div>
+            <div>
+                <span class="skill-category">Arquitetura & Design:</span>
+                Clean Architecture, DDD, Microsserviços, TDD, SOLID.
+            </div>
+            <div>
+                <span class="skill-category">Infra & Dados:</span>
+                MySQL, MongoDB, Redis, Kafka, AWS (SQS), Docker.
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Formação Acadêmica</h2>
+        <div class="education-item">
+            <strong>Tecnologia em Análise e Desenvolvimento de Sistemas</strong><br>
+            Uniritter (Centro Universitário Ritter dos Reis) | 2015 - 2018
+        </div>
+        <div class="education-item">
+            <strong>Técnico em Informática</strong><br>
+            Alcides Maya Tecnologia | 2013 - 2014
+        </div>
+    </section>
+
+</body>
+</html>
