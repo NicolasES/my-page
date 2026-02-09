@@ -1,8 +1,8 @@
-name: Deploy to GitHub Pages
+name: Deploy static site to Pages
 
 on:
   push:
-    branches: [ main ]
+    branches: [ 'main' ]
   workflow_dispatch:
 
 permissions:
@@ -15,26 +15,28 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      # 1) Puxa o código
+      - uses: actions/checkout@v3
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
+      # 2) Configura Node
+      - uses: actions/setup-node@v3
         with:
           node-version: 18
           cache: npm
 
-      - name: Install dependencies
-        run: npm install
+      # 3) Instala dependências
+      - run: npm install
 
-      - name: Build
-        run: npm run build
+      # 4) Gera o build
+      - run: npm run build
 
+      # 5) Envia artefatos para Pages
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
 
+      # 6) Publica no GitHub Pages
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
