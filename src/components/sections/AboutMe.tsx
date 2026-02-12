@@ -1,7 +1,7 @@
 import { Box, Container, Link, Tooltip, Typography } from "@mui/material"
 import Grid from '@mui/material/Unstable_Grid2' // Grid version 2
 import { MyImage, TitleDivider } from "../shared"
-import meImg from '../../assets/me.jpeg'
+import meImg from '../../assets/me.png'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf'
