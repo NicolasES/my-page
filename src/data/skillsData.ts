@@ -28,7 +28,7 @@ export const skillsData: Array<Skill> = [
     skill: 'React',
     icon: ReactIcon,
     selected: false,
-    rating: 1
+    rating: 3
   },
   {
     skill: 'Nodejs',
@@ -46,19 +46,19 @@ export const skillsData: Array<Skill> = [
     skill: 'Clean Architecture',
     icon: CleanArchitectureIcon,
     selected: true,
-    rating: 4
+    rating: 5
   },
   {
     skill: 'PHP',
     icon: PHPIcon,
-    selected: false,
-    rating: 4
+    selected: true,
+    rating: 5
   },
   {
     skill: 'Laravel',
     icon: undefined,
-    selected: false,
-    rating: 3
+    selected: true,
+    rating: 5
   },
   {
     skill: 'Backend',
@@ -82,7 +82,7 @@ export const skillsData: Array<Skill> = [
     skill: 'Kafka',
     icon: undefined,
     selected: false,
-    rating: 2
+    rating: 1
   },
   {
     skill: 'MongoDB',
@@ -93,25 +93,25 @@ export const skillsData: Array<Skill> = [
   {
     skill: 'MYSQL',
     icon: MysqlIcon,
-    selected: false,
+    selected: true,
     rating: 4
   },
   {
     skill: 'Jest',
     icon: JestIcon,
-    selected: false,
+    selected: true,
     rating: 4
   },
   {
     skill: 'DDD',
     icon: CleanArchitectureIcon,
-    selected: false,
-    rating: 2
+    selected: true,
+    rating: 4
   },
   {
     skill: 'NestJS',
     icon: NestjsIcon,
-    selected: false,
-    rating: 3
+    selected: true,
+    rating: 4
   },
 ]

@@ -34,15 +34,15 @@ export const AboutMe: React.FC = () => {
           </Typography>
 
           <Typography variant="body1" sx={styles.p} mt={3}>
-            Desenvolvedor Backend com <strong>10 anos de experiência</strong> focado na construção de sistemas <strong>SaaS escaláveis</strong>. 
-            Especialista em <strong>Node.js, TypeScript e PHP (Laravel)</strong>, domino o design de arquiteturas resilientes utilizando 
+            Desenvolvedor Backend atuando na área desde 2014, dedicado à construção de sistemas <strong>SaaS escaláveis</strong>. 
+            Com ampla experiência em <strong>Node.js, TypeScript e PHP (Laravel)</strong>, domino o design de arquiteturas resilientes utilizando 
             <strong> Clean Architecture, DDD e Microsserviços</strong>.
             <br /><br />
-            Com passagens por grandes players como <strong>Starian e Warren Brasil</strong>, possuo sólida vivência em ambientes de alta performance com mensageria 
-            <strong> (Kafka e SQS)</strong> e testes automatizados. 
+            Possuo sólida vivência no desenvolvimento e evolução de <strong>sistemas próprios</strong> em grandes empresas, como <strong>Warren Brasil, Starian (Checklistfacil) e Nelogica</strong>, 
+            com atuação direta em ambientes de alta performance envolvendo mensageria <strong> (Kafka e SQS)</strong> e testes automatizados. 
             <br /><br />
-            Acredito que tecnologia deve gerar valor real; por isso, atuo <strong>próximo ao produto e ao negócio</strong>, 
-            participando ativamente de <strong>definições estratégicas</strong> que transformam requisitos complexos em APIs eficientes, seguras e de alta disponibilidade.
+            Oriento meu trabalho para garantir que a tecnologia gere valor real; por isso, atuo <strong>próximo ao produto e ao negócio</strong>, 
+            participando ativamente de <strong>definições estratégicas</strong> que transformam requisitos complexos em sistemas eficientes, seguros e de alta disponibilidade.
           </Typography>
 
           <Box mt={3} alignItems='center' display='flex'>
